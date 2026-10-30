@@ -1,0 +1,32 @@
+{
+  "gazetteer_count": 34,
+  "samples": [
+    {
+      "query": "Nr Clock Twr Chowk Rajpur Rd Dehradun",
+      "resolved_name": "Dehradun Clock Tower",
+      "geoname_id": -1,
+      "confidence": 0.935,
+      "cold_sql_ms": 16.299099999741884,
+      "warm_mean_sql_ms": 2.81266499978301,
+      "warm_median_sql_ms": 2.7958999999100342
+    },
+    {
+      "query": "Laxman Jhula NH7 Rishikesh",
+      "resolved_name": "Laxman Jhula NH-7",
+      "geoname_id": -2,
+      "confidence": 1.0,
+      "cold_sql_ms": 2.2630000003118766,
+      "warm_mean_sql_ms": 2.3685300002398435,
+      "warm_median_sql_ms": 2.3491000010835705
+    }
+  ],
+  "repeats_per_query": 20,
+  "warm_mean_sql_ms": 2.5905975000114267,
+  "warm_median_sql_ms": 2.589099999568134,
+  "warm_mean_under_5ms": true,
+  "select_one_roundtrip_mean_ms": 1.063820000126725,
+  "explain_server_execution_ms": 1.485,
+  "explain_planning_ms": 0.235,
+  "trigram_index_plan_with_seqscan_disabled": true,
+  "limitations": "Small development dataset; warmed local SQL timings include round trips, not national-scale validation."
+}

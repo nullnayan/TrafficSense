@@ -1,0 +1,58 @@
+{
+  "dataset_count": 24,
+  "dataset_kind": "authored_synthetic_annotations_not_field_validation",
+  "model_versions": [
+    "calibrated_teacher-v1"
+  ],
+  "relevance": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "temporal": {
+    "active": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "cleared": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "scheduled_future": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "unrelated_noise": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "temporal_macro": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "classification_latency_ms_per_item": 0.049566666575628915,
+  "extraction_latency_ms_per_item": 0.3663083332412498,
+  "field_accuracy": 0.9958333333333333,
+  "per_field_accuracy": {
+    "incident_type": 1.0,
+    "severity": 0.9583333333333334,
+    "temporal_status": 1.0,
+    "lanes_blocked": 1.0,
+    "total_lanes": 1.0,
+    "direction": 1.0,
+    "landmark_tuple.corridor_name": 1.0,
+    "landmark_tuple.primary_landmark": 1.0,
+    "landmark_tuple.city": 1.0,
+    "landmark_tuple.state": 1.0
+  },
+  "abstention_precision": 1.0,
+  "absent_lane_abstention_recall": 1.0,
+  "correct_fields": 239,
+  "evaluated_fields": 240
+}

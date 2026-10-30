@@ -1,0 +1,14 @@
+-- @file: sql/migrate.psql
+-- @exports: Current existing-volume upgrade path
+-- @depends_on: sql/03_ingestion_outbox.sql through sql/07_scout_assistant.sql
+-- @purpose: Repeatably upgrade existing volumes while preserving spatial and analytics states.
+\set ON_ERROR_STOP on
+\i /docker-entrypoint-initdb.d/03_ingestion_outbox.sql
+SELECT to_regclass('public.nlp_stage_outbox') IS NULL AS needs_nlp \gset
+\if :needs_nlp
+\i /docker-entrypoint-initdb.d/04_nlp_states.sql
+\endif
+\i /docker-entrypoint-initdb.d/05_spatial_pipeline.sql
+\i /docker-entrypoint-initdb.d/06_analytics_pipeline.sql
+\i /docker-entrypoint-initdb.d/07_scout_assistant.sql
+\i /docker-entrypoint-initdb.d/08_omnichannel.sql

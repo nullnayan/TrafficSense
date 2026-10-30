@@ -1,0 +1,18 @@
+{
+  "train_runtime": 136.3448,
+  "train_samples_per_second": 1.76,
+  "train_steps_per_second": 0.44,
+  "total_flos": 966631161765888.0,
+  "train_loss": 0.9643258611361186,
+  "epoch": 2.7272727272727275,
+  "provenance": {
+    "limitations": "Training log reconciled with local adapter presence; extraction accuracy and runtime adapter loading are unverified.",
+    "hardware": "Tesla T4",
+    "method": "4-bit Unsloth QLoRA",
+    "field_validated": false,
+    "exported_directory": "models/qwen25_3b_lora",
+    "base_model": "Qwen2.5-3B",
+    "inference_accuracy": "not_measured",
+    "source": "user_supplied_colab_training_log"
+  }
+}

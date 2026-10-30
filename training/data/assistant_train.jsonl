@@ -1,0 +1,8 @@
+{"id": "query01", "text": "Find incidents within 500 metres of 30.32, 78.04.", "output": {"intent": "nearby_incidents", "slots": {"latitude": 30.32, "longitude": 78.04, "radius_meters": 500}}}
+{"id": "query02", "text": "Show the disruption history of NH-7.", "output": {"intent": "corridor_history", "slots": {"corridor_name": "NH-7"}}}
+{"id": "query03", "text": "What is average clearance time in Dehradun?", "output": {"intent": "average_clearance", "slots": {"city": "Dehradun"}}}
+{"id": "query04", "text": "Which congestion hotspots are in Bengaluru?", "output": {"intent": "congestion_hotspots", "slots": {"city": "Bengaluru"}}}
+{"id": "query05", "text": "Find five incidents near 28.6, 77.2 within 2 kilometres.", "output": {"intent": "nearby_incidents", "slots": {"latitude": 28.6, "longitude": 77.2, "radius_meters": 2000, "limit": 5}}}
+{"id": "query06", "text": "Review incidents previously recorded on Rajpur Road.", "output": {"intent": "corridor_history", "slots": {"corridor_name": "Rajpur Road"}}}
+{"id": "query07", "text": "Average duration for collisions in Noida?", "output": {"intent": "average_clearance", "slots": {"city": "Noida", "incident_type": "collision"}}}
+{"id": "query08", "text": "List ten congestion hotspots in Gurugram.", "output": {"intent": "congestion_hotspots", "slots": {"city": "Gurugram", "limit": 10}}}

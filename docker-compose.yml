@@ -1,0 +1,40 @@
+name: trafficsense
+services:
+  trafficsense-postgis:
+    image: postgis/postgis:16-3.4
+    container_name: trafficsense-postgis
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-trafficsense}
+      POSTGRES_USER: ${POSTGRES_USER:-trafficsense}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-trafficsense_dev}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - trafficsense_pgdata:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 15s
+    restart: unless-stopped
+  trafficsense-redis:
+    image: redis:7-alpine
+    container_name: trafficsense-redis
+    command: [redis-server, --appendonly, "yes"]
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - trafficsense_redisdata:/data
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+volumes:
+  trafficsense_pgdata:
+    name: trafficsense_pgdata
+  trafficsense_redisdata:
+    name: trafficsense_redisdata

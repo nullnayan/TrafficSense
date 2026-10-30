@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-10-14T17:36:22.030981+00:00",
+  "provenance": "local_fixture_api_verification",
+  "field_validated": false,
+  "scout": {
+    "latency_ms": 316.044,
+    "route_source": "corridor_waypoint_fallback",
+    "choke_count": 4,
+    "overlaps": [
+      "BLOCKED_AT_ETA",
+      "CLEARED_BEFORE_ETA"
+    ],
+    "risk_level": "HIGH"
+  },
+  "assistant": {
+    "latency_ms": 48.865,
+    "template_id": "nearby_incidents",
+    "slot_source": "deterministic_local",
+    "bound_parameters": {
+      "corridor_name": null,
+      "city": null,
+      "latitude": 30.3256,
+      "longitude": 78.0418,
+      "radius_meters": 500.0,
+      "start_at": null,
+      "end_at": null,
+      "incident_type": null,
+      "severity": null,
+      "limit": 20,
+      "time_window_hours": 24.0
+    },
+    "row_count": 1
+  },
+  "limitations": "Fixture smoke verification; live OSRM, cloud slots and field route accuracy unverified."
+}

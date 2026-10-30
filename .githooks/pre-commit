@@ -1,0 +1,15 @@
+#!/bin/sh
+# Scan staged bytes, including files added with --force.
+set -eu
+cd "$(git rev-parse --show-toplevel)"
+if [ -x .venv/Scripts/python.exe ]; then
+  exec .venv/Scripts/python.exe scripts/check_publication.py --staged
+elif [ -x .venv/bin/python ]; then
+  exec .venv/bin/python scripts/check_publication.py --staged
+elif command -v python3 >/dev/null 2>&1; then
+  exec python3 scripts/check_publication.py --staged
+elif command -v python >/dev/null 2>&1; then
+  exec python scripts/check_publication.py --staged
+fi
+echo 'Python is required for the staged credential check. Run setup first.' >&2
+exit 1

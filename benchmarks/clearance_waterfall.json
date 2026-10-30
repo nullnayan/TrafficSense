@@ -1,0 +1,233 @@
+{
+  "dataset": "24 authored synthetic references; eight types x three levels; no field evidence",
+  "method": "in-memory math benchmark; SQL retrieval and worker recovery tested separately",
+  "p90_status": "CV=0.35 moment-matched Bayesian approximation; field calibration pending",
+  "sample_count": 24,
+  "mae_minutes": 34.654761904761905,
+  "rmse_minutes": 62.17097174639589,
+  "ceiling_compliance": 1.0,
+  "upper_bound_reference_coverage": 0.9583333333333334,
+  "level_coverage": {
+    "1": 8,
+    "2": 8,
+    "3": 8
+  },
+  "cases": [
+    {
+      "type": "accident",
+      "reference_minutes": 65,
+      "selected_level": 1,
+      "expected_minutes": 57.71428571428571,
+      "upper_bound_minutes": 79.76521124081987,
+      "error_minutes": -7.285714285714292,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "accident",
+      "reference_minutes": 65,
+      "selected_level": 2,
+      "expected_minutes": 54.8,
+      "upper_bound_minutes": 77.33452616514194,
+      "error_minutes": -10.200000000000003,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "accident",
+      "reference_minutes": 65,
+      "selected_level": 3,
+      "expected_minutes": 48.0,
+      "upper_bound_minutes": 72.8607791492858,
+      "error_minutes": -17.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "breakdown",
+      "reference_minutes": 30,
+      "selected_level": 1,
+      "expected_minutes": 27.42857142857143,
+      "upper_bound_minutes": 37.512892199927904,
+      "error_minutes": -2.5714285714285694,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "breakdown",
+      "reference_minutes": 30,
+      "selected_level": 2,
+      "expected_minutes": 26.4,
+      "upper_bound_minutes": 36.908972893336006,
+      "error_minutes": -3.6000000000000014,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "breakdown",
+      "reference_minutes": 30,
+      "selected_level": 3,
+      "expected_minutes": 24.0,
+      "upper_bound_minutes": 36.4303895746429,
+      "error_minutes": -6.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "congestion",
+      "reference_minutes": 40,
+      "selected_level": 1,
+      "expected_minutes": 33.57142857142857,
+      "upper_bound_minutes": 47.93201780294644,
+      "error_minutes": -6.428571428571431,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "congestion",
+      "reference_minutes": 40,
+      "selected_level": 2,
+      "expected_minutes": 31.0,
+      "upper_bound_minutes": 45.212612940979355,
+      "error_minutes": -9.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "congestion",
+      "reference_minutes": 40,
+      "selected_level": 3,
+      "expected_minutes": 25.0,
+      "upper_bound_minutes": 37.94832247358636,
+      "error_minutes": -15.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "waterlogging",
+      "reference_minutes": 120,
+      "selected_level": 1,
+      "expected_minutes": 145.71428571428572,
+      "upper_bound_minutes": 217.3243442259406,
+      "error_minutes": 25.714285714285722,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "waterlogging",
+      "reference_minutes": 120,
+      "selected_level": 2,
+      "expected_minutes": 156.0,
+      "upper_bound_minutes": 235.48182396239662,
+      "error_minutes": 36.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "waterlogging",
+      "reference_minutes": 120,
+      "selected_level": 3,
+      "expected_minutes": 180.0,
+      "upper_bound_minutes": 273.2279218098218,
+      "error_minutes": 60.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "landslide",
+      "reference_minutes": 240,
+      "selected_level": 1,
+      "expected_minutes": 337.7142857142857,
+      "upper_bound_minutes": 548.5243415308627,
+      "error_minutes": 97.71428571428572,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "landslide",
+      "reference_minutes": 240,
+      "selected_level": 2,
+      "expected_minutes": 376.8,
+      "upper_bound_minutes": 607.0990481910515,
+      "error_minutes": 136.8,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "landslide",
+      "reference_minutes": 240,
+      "selected_level": 3,
+      "expected_minutes": 468.0,
+      "upper_bound_minutes": 710.3925967055367,
+      "error_minutes": 228.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "construction",
+      "reference_minutes": 150,
+      "selected_level": 1,
+      "expected_minutes": 157.71428571428572,
+      "upper_bound_minutes": 218.31885504961812,
+      "error_minutes": 7.714285714285722,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "construction",
+      "reference_minutes": 150,
+      "selected_level": 2,
+      "expected_minutes": 160.8,
+      "upper_bound_minutes": 228.15302490592617,
+      "error_minutes": 10.800000000000011,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "construction",
+      "reference_minutes": 150,
+      "selected_level": 3,
+      "expected_minutes": 168.0,
+      "upper_bound_minutes": 255.01272702250037,
+      "error_minutes": 18.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "protest",
+      "reference_minutes": 100,
+      "selected_level": 1,
+      "expected_minutes": 125.71428571428572,
+      "upper_bound_minutes": 191.35747761128766,
+      "error_minutes": 25.714285714285722,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "protest",
+      "reference_minutes": 100,
+      "selected_level": 2,
+      "expected_minutes": 136.0,
+      "upper_bound_minutes": 208.59270383535423,
+      "error_minutes": 36.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "protest",
+      "reference_minutes": 100,
+      "selected_level": 3,
+      "expected_minutes": 160.0,
+      "upper_bound_minutes": 242.86926383095272,
+      "error_minutes": 60.0,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "other",
+      "reference_minutes": 60,
+      "selected_level": 1,
+      "expected_minutes": 57.42857142857143,
+      "upper_bound_minutes": 78.01116025540043,
+      "error_minutes": -2.5714285714285694,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "other",
+      "reference_minutes": 60,
+      "selected_level": 2,
+      "expected_minutes": 56.4,
+      "upper_bound_minutes": 78.48701979402273,
+      "error_minutes": -3.6000000000000014,
+      "ceiling_compliant": true
+    },
+    {
+      "type": "other",
+      "reference_minutes": 60,
+      "selected_level": 3,
+      "expected_minutes": 54.0,
+      "upper_bound_minutes": 81.96837654294654,
+      "error_minutes": -6.0,
+      "ceiling_compliant": true
+    }
+  ]
+}

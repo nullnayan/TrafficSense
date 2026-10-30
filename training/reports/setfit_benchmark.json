@@ -1,0 +1,144 @@
+{
+  "seed": 42,
+  "encoder": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "training_count": 80,
+  "evaluation_count": 24,
+  "teacher": {
+    "dataset_count": 24,
+    "dataset_kind": "authored_synthetic_annotations_not_field_validation",
+    "model_versions": [
+      "calibrated_teacher-v1"
+    ],
+    "relevance": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "temporal": {
+      "active": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "cleared": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "scheduled_future": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "unrelated_noise": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "temporal_macro": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "classification_latency_ms_per_item": 0.3305041665650303,
+    "extraction_latency_ms_per_item": 2.203145833694483,
+    "field_accuracy": 0.9958333333333333,
+    "per_field_accuracy": {
+      "incident_type": 1.0,
+      "severity": 0.9583333333333334,
+      "temporal_status": 1.0,
+      "lanes_blocked": 1.0,
+      "total_lanes": 1.0,
+      "direction": 1.0,
+      "landmark_tuple.corridor_name": 1.0,
+      "landmark_tuple.primary_landmark": 1.0,
+      "landmark_tuple.city": 1.0,
+      "landmark_tuple.state": 1.0
+    },
+    "abstention_precision": 1.0,
+    "absent_lane_abstention_recall": 1.0,
+    "correct_fields": 239,
+    "evaluated_fields": 240
+  },
+  "setfit": {
+    "dataset_count": 24,
+    "dataset_kind": "authored_synthetic_annotations_not_field_validation",
+    "model_versions": [
+      "local_setfit:setfit_gatekeeper"
+    ],
+    "relevance": {
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "f1": 0.975609756097561
+    },
+    "temporal": {
+      "active": {
+        "precision": 1.0,
+        "recall": 0.9166666666666666,
+        "f1": 0.9565217391304348
+      },
+      "cleared": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889
+      },
+      "scheduled_future": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.888888888888889
+      },
+      "unrelated_noise": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      }
+    },
+    "temporal_macro": {
+      "precision": 0.9,
+      "recall": 0.9166666666666666,
+      "f1": 0.8978605935127675
+    },
+    "classification_latency_ms_per_item": 455.05149999932354,
+    "extraction_latency_ms_per_item": 0.6883708335105135,
+    "field_accuracy": 0.9958333333333333,
+    "per_field_accuracy": {
+      "incident_type": 1.0,
+      "severity": 0.9583333333333334,
+      "temporal_status": 1.0,
+      "lanes_blocked": 1.0,
+      "total_lanes": 1.0,
+      "direction": 1.0,
+      "landmark_tuple.corridor_name": 1.0,
+      "landmark_tuple.primary_landmark": 1.0,
+      "landmark_tuple.city": 1.0,
+      "landmark_tuple.state": 1.0
+    },
+    "abstention_precision": 1.0,
+    "absent_lane_abstention_recall": 1.0,
+    "correct_fields": 239,
+    "evaluated_fields": 240
+  },
+  "status": "trained_and_evaluated",
+  "limitations": "Small authored synthetic corpus; not an independent real-world validation.",
+  "warm_inference": {
+    "measured_at": "2026-10-14T16:45:08.541218+00:00",
+    "provenance": "local_authored_synthetic_warm_inference",
+    "model_load_ms": 1689.777,
+    "first_inference_ms": 548.748,
+    "warm_mean_ms_per_item": 325.678,
+    "warm_median_ms_per_item": 314.482,
+    "warm_p90_ms_per_item": 390.524,
+    "sample_count": 48,
+    "dataset_count": 24,
+    "repeats": 2,
+    "torch_threads": 2,
+    "device": "cpu",
+    "field_validated": false,
+    "limitations": "Warm CPU measurement excludes model load; host load and thread settings affect latency."
+  },
+  "historical_latency": {
+    "classification_latency_ms_per_item": 455.05149999932354,
+    "provenance": "previous_recorded_cold_or_throttled_evaluation; load isolation not recorded"
+  }
+}

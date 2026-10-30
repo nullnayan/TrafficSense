@@ -1,0 +1,808 @@
+{
+  "generated_at": "2026-10-14T18:20:18.937209+00:00",
+  "project": "TrafficSense",
+  "phase": 7,
+  "field_validation_status": "not_performed",
+  "evidence": {
+    "teacher": {
+      "source": "training/reports/teacher_eval.json",
+      "provenance": "authored_synthetic_annotations",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "dataset_count": 24,
+        "dataset_kind": "authored_synthetic_annotations_not_field_validation",
+        "model_versions": [
+          "calibrated_teacher-v1"
+        ],
+        "relevance": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "temporal": {
+          "active": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "cleared": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "scheduled_future": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "unrelated_noise": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "temporal_macro": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classification_latency_ms_per_item": 0.049566666575628915,
+        "extraction_latency_ms_per_item": 0.3663083332412498,
+        "field_accuracy": 0.9958333333333333,
+        "per_field_accuracy": {
+          "incident_type": 1.0,
+          "severity": 0.9583333333333334,
+          "temporal_status": 1.0,
+          "lanes_blocked": 1.0,
+          "total_lanes": 1.0,
+          "direction": 1.0,
+          "landmark_tuple.corridor_name": 1.0,
+          "landmark_tuple.primary_landmark": 1.0,
+          "landmark_tuple.city": 1.0,
+          "landmark_tuple.state": 1.0
+        },
+        "abstention_precision": 1.0,
+        "absent_lane_abstention_recall": 1.0,
+        "correct_fields": 239,
+        "evaluated_fields": 240
+      },
+      "sha256": "a960d17fa0001d2d8b637fac7e2c1a85ee012806cad930f6b364251f18709eec"
+    },
+    "setfit": {
+      "source": "training/reports/setfit_benchmark.json",
+      "provenance": "authored_synthetic_annotations",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "seed": 42,
+        "encoder": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+        "training_count": 80,
+        "evaluation_count": 24,
+        "teacher": {
+          "dataset_count": 24,
+          "dataset_kind": "authored_synthetic_annotations_not_field_validation",
+          "model_versions": [
+            "calibrated_teacher-v1"
+          ],
+          "relevance": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "temporal": {
+            "active": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "cleared": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "scheduled_future": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "unrelated_noise": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "temporal_macro": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "classification_latency_ms_per_item": 0.3305041665650303,
+          "extraction_latency_ms_per_item": 2.203145833694483,
+          "field_accuracy": 0.9958333333333333,
+          "per_field_accuracy": {
+            "incident_type": 1.0,
+            "severity": 0.9583333333333334,
+            "temporal_status": 1.0,
+            "lanes_blocked": 1.0,
+            "total_lanes": 1.0,
+            "direction": 1.0,
+            "landmark_tuple.corridor_name": 1.0,
+            "landmark_tuple.primary_landmark": 1.0,
+            "landmark_tuple.city": 1.0,
+            "landmark_tuple.state": 1.0
+          },
+          "abstention_precision": 1.0,
+          "absent_lane_abstention_recall": 1.0,
+          "correct_fields": 239,
+          "evaluated_fields": 240
+        },
+        "setfit": {
+          "dataset_count": 24,
+          "dataset_kind": "authored_synthetic_annotations_not_field_validation",
+          "model_versions": [
+            "local_setfit:setfit_gatekeeper"
+          ],
+          "relevance": {
+            "precision": 0.9523809523809523,
+            "recall": 1.0,
+            "f1": 0.975609756097561
+          },
+          "temporal": {
+            "active": {
+              "precision": 1.0,
+              "recall": 0.9166666666666666,
+              "f1": 0.9565217391304348
+            },
+            "cleared": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.888888888888889
+            },
+            "scheduled_future": {
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.888888888888889
+            },
+            "unrelated_noise": {
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571
+            }
+          },
+          "temporal_macro": {
+            "precision": 0.9,
+            "recall": 0.9166666666666666,
+            "f1": 0.8978605935127675
+          },
+          "classification_latency_ms_per_item": 455.05149999932354,
+          "extraction_latency_ms_per_item": 0.6883708335105135,
+          "field_accuracy": 0.9958333333333333,
+          "per_field_accuracy": {
+            "incident_type": 1.0,
+            "severity": 0.9583333333333334,
+            "temporal_status": 1.0,
+            "lanes_blocked": 1.0,
+            "total_lanes": 1.0,
+            "direction": 1.0,
+            "landmark_tuple.corridor_name": 1.0,
+            "landmark_tuple.primary_landmark": 1.0,
+            "landmark_tuple.city": 1.0,
+            "landmark_tuple.state": 1.0
+          },
+          "abstention_precision": 1.0,
+          "absent_lane_abstention_recall": 1.0,
+          "correct_fields": 239,
+          "evaluated_fields": 240
+        },
+        "status": "trained_and_evaluated",
+        "limitations": "Small authored synthetic corpus; not an independent real-world validation.",
+        "warm_inference": {
+          "measured_at": "2026-10-14T16:45:08.541218+00:00",
+          "provenance": "local_authored_synthetic_warm_inference",
+          "model_load_ms": 1689.777,
+          "first_inference_ms": 548.748,
+          "warm_mean_ms_per_item": 325.678,
+          "warm_median_ms_per_item": 314.482,
+          "warm_p90_ms_per_item": 390.524,
+          "sample_count": 48,
+          "dataset_count": 24,
+          "repeats": 2,
+          "torch_threads": 2,
+          "device": "cpu",
+          "field_validated": false,
+          "limitations": "Warm CPU measurement excludes model load; host load and thread settings affect latency."
+        },
+        "historical_latency": {
+          "classification_latency_ms_per_item": 455.05149999932354,
+          "provenance": "previous_recorded_cold_or_throttled_evaluation; load isolation not recorded"
+        }
+      },
+      "sha256": "618152f46a909e0db60323df436b8b8a40af3689c77e09271e8140e8eda3b525"
+    },
+    "qlora": {
+      "source": "training/reports/qlora_training_metrics.json",
+      "provenance": "user_supplied_colab_training_log",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "train_runtime": 136.3448,
+        "train_samples_per_second": 1.76,
+        "train_steps_per_second": 0.44,
+        "total_flos": 966631161765888.0,
+        "train_loss": 0.9643258611361186,
+        "epoch": 2.7272727272727275,
+        "provenance": {
+          "limitations": "Training log reconciled with local adapter presence; extraction accuracy and runtime adapter loading are unverified.",
+          "hardware": "Tesla T4",
+          "method": "4-bit Unsloth QLoRA",
+          "field_validated": false,
+          "exported_directory": "models/qwen25_3b_lora",
+          "base_model": "Qwen2.5-3B",
+          "inference_accuracy": "not_measured",
+          "source": "user_supplied_colab_training_log"
+        }
+      },
+      "sha256": "34cb81533c7ab4fef867e4ebbd5565373aba1366ec8b55257807d8ef632b7256"
+    },
+    "spatial": {
+      "source": "benchmarks/spatial_lookup.json",
+      "provenance": "small_local_gazetteer_sql_benchmark",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "gazetteer_count": 34,
+        "samples": [
+          {
+            "query": "Nr Clock Twr Chowk Rajpur Rd Dehradun",
+            "resolved_name": "Dehradun Clock Tower",
+            "geoname_id": -1,
+            "confidence": 0.935,
+            "cold_sql_ms": 16.299099999741884,
+            "warm_mean_sql_ms": 2.81266499978301,
+            "warm_median_sql_ms": 2.7958999999100342
+          },
+          {
+            "query": "Laxman Jhula NH7 Rishikesh",
+            "resolved_name": "Laxman Jhula NH-7",
+            "geoname_id": -2,
+            "confidence": 1.0,
+            "cold_sql_ms": 2.2630000003118766,
+            "warm_mean_sql_ms": 2.3685300002398435,
+            "warm_median_sql_ms": 2.3491000010835705
+          }
+        ],
+        "repeats_per_query": 20,
+        "warm_mean_sql_ms": 2.5905975000114267,
+        "warm_median_sql_ms": 2.589099999568134,
+        "warm_mean_under_5ms": true,
+        "select_one_roundtrip_mean_ms": 1.063820000126725,
+        "explain_server_execution_ms": 1.485,
+        "explain_planning_ms": 0.235,
+        "trigram_index_plan_with_seqscan_disabled": true,
+        "limitations": "Small development dataset; warmed local SQL timings include round trips, not national-scale validation."
+      },
+      "sha256": "4a87b8576a39cdea057bf46a674b34847a0b53f881a4b72a75bbfc79b757e745"
+    },
+    "clearance": {
+      "source": "benchmarks/clearance_waterfall.json",
+      "provenance": "authored_synthetic_clearance_references",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "dataset": "24 authored synthetic references; eight types x three levels; no field evidence",
+        "method": "in-memory math benchmark; SQL retrieval and worker recovery tested separately",
+        "p90_status": "CV=0.35 moment-matched Bayesian approximation; field calibration pending",
+        "sample_count": 24,
+        "mae_minutes": 34.654761904761905,
+        "rmse_minutes": 62.17097174639589,
+        "ceiling_compliance": 1.0,
+        "upper_bound_reference_coverage": 0.9583333333333334,
+        "level_coverage": {
+          "1": 8,
+          "2": 8,
+          "3": 8
+        },
+        "cases": [
+          {
+            "type": "accident",
+            "reference_minutes": 65,
+            "selected_level": 1,
+            "expected_minutes": 57.71428571428571,
+            "upper_bound_minutes": 79.76521124081987,
+            "error_minutes": -7.285714285714292,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "accident",
+            "reference_minutes": 65,
+            "selected_level": 2,
+            "expected_minutes": 54.8,
+            "upper_bound_minutes": 77.33452616514194,
+            "error_minutes": -10.200000000000003,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "accident",
+            "reference_minutes": 65,
+            "selected_level": 3,
+            "expected_minutes": 48.0,
+            "upper_bound_minutes": 72.8607791492858,
+            "error_minutes": -17.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "breakdown",
+            "reference_minutes": 30,
+            "selected_level": 1,
+            "expected_minutes": 27.42857142857143,
+            "upper_bound_minutes": 37.512892199927904,
+            "error_minutes": -2.5714285714285694,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "breakdown",
+            "reference_minutes": 30,
+            "selected_level": 2,
+            "expected_minutes": 26.4,
+            "upper_bound_minutes": 36.908972893336006,
+            "error_minutes": -3.6000000000000014,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "breakdown",
+            "reference_minutes": 30,
+            "selected_level": 3,
+            "expected_minutes": 24.0,
+            "upper_bound_minutes": 36.4303895746429,
+            "error_minutes": -6.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "congestion",
+            "reference_minutes": 40,
+            "selected_level": 1,
+            "expected_minutes": 33.57142857142857,
+            "upper_bound_minutes": 47.93201780294644,
+            "error_minutes": -6.428571428571431,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "congestion",
+            "reference_minutes": 40,
+            "selected_level": 2,
+            "expected_minutes": 31.0,
+            "upper_bound_minutes": 45.212612940979355,
+            "error_minutes": -9.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "congestion",
+            "reference_minutes": 40,
+            "selected_level": 3,
+            "expected_minutes": 25.0,
+            "upper_bound_minutes": 37.94832247358636,
+            "error_minutes": -15.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "waterlogging",
+            "reference_minutes": 120,
+            "selected_level": 1,
+            "expected_minutes": 145.71428571428572,
+            "upper_bound_minutes": 217.3243442259406,
+            "error_minutes": 25.714285714285722,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "waterlogging",
+            "reference_minutes": 120,
+            "selected_level": 2,
+            "expected_minutes": 156.0,
+            "upper_bound_minutes": 235.48182396239662,
+            "error_minutes": 36.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "waterlogging",
+            "reference_minutes": 120,
+            "selected_level": 3,
+            "expected_minutes": 180.0,
+            "upper_bound_minutes": 273.2279218098218,
+            "error_minutes": 60.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "landslide",
+            "reference_minutes": 240,
+            "selected_level": 1,
+            "expected_minutes": 337.7142857142857,
+            "upper_bound_minutes": 548.5243415308627,
+            "error_minutes": 97.71428571428572,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "landslide",
+            "reference_minutes": 240,
+            "selected_level": 2,
+            "expected_minutes": 376.8,
+            "upper_bound_minutes": 607.0990481910515,
+            "error_minutes": 136.8,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "landslide",
+            "reference_minutes": 240,
+            "selected_level": 3,
+            "expected_minutes": 468.0,
+            "upper_bound_minutes": 710.3925967055367,
+            "error_minutes": 228.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "construction",
+            "reference_minutes": 150,
+            "selected_level": 1,
+            "expected_minutes": 157.71428571428572,
+            "upper_bound_minutes": 218.31885504961812,
+            "error_minutes": 7.714285714285722,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "construction",
+            "reference_minutes": 150,
+            "selected_level": 2,
+            "expected_minutes": 160.8,
+            "upper_bound_minutes": 228.15302490592617,
+            "error_minutes": 10.800000000000011,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "construction",
+            "reference_minutes": 150,
+            "selected_level": 3,
+            "expected_minutes": 168.0,
+            "upper_bound_minutes": 255.01272702250037,
+            "error_minutes": 18.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "protest",
+            "reference_minutes": 100,
+            "selected_level": 1,
+            "expected_minutes": 125.71428571428572,
+            "upper_bound_minutes": 191.35747761128766,
+            "error_minutes": 25.714285714285722,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "protest",
+            "reference_minutes": 100,
+            "selected_level": 2,
+            "expected_minutes": 136.0,
+            "upper_bound_minutes": 208.59270383535423,
+            "error_minutes": 36.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "protest",
+            "reference_minutes": 100,
+            "selected_level": 3,
+            "expected_minutes": 160.0,
+            "upper_bound_minutes": 242.86926383095272,
+            "error_minutes": 60.0,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "other",
+            "reference_minutes": 60,
+            "selected_level": 1,
+            "expected_minutes": 57.42857142857143,
+            "upper_bound_minutes": 78.01116025540043,
+            "error_minutes": -2.5714285714285694,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "other",
+            "reference_minutes": 60,
+            "selected_level": 2,
+            "expected_minutes": 56.4,
+            "upper_bound_minutes": 78.48701979402273,
+            "error_minutes": -3.6000000000000014,
+            "ceiling_compliant": true
+          },
+          {
+            "type": "other",
+            "reference_minutes": 60,
+            "selected_level": 3,
+            "expected_minutes": 54.0,
+            "upper_bound_minutes": 81.96837654294654,
+            "error_minutes": -6.0,
+            "ceiling_compliant": true
+          }
+        ]
+      },
+      "sha256": "69ee9f90c34a810f78d8c0e2ff8d2a1d9692cace207b8bb6f6887658a296949c"
+    },
+    "scout_assistant": {
+      "source": "benchmarks/scout_assistant_verification.json",
+      "provenance": "local_fixture_api_verification",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "generated_at": "2026-10-14T17:36:22.030981+00:00",
+        "provenance": "local_fixture_api_verification",
+        "field_validated": false,
+        "scout": {
+          "latency_ms": 316.044,
+          "route_source": "corridor_waypoint_fallback",
+          "choke_count": 4,
+          "overlaps": [
+            "BLOCKED_AT_ETA",
+            "CLEARED_BEFORE_ETA"
+          ],
+          "risk_level": "HIGH"
+        },
+        "assistant": {
+          "latency_ms": 48.865,
+          "template_id": "nearby_incidents",
+          "slot_source": "deterministic_local",
+          "bound_parameters": {
+            "corridor_name": null,
+            "city": null,
+            "latitude": 30.3256,
+            "longitude": 78.0418,
+            "radius_meters": 500.0,
+            "start_at": null,
+            "end_at": null,
+            "incident_type": null,
+            "severity": null,
+            "limit": 20,
+            "time_window_hours": 24.0
+          },
+          "row_count": 1
+        },
+        "limitations": "Fixture smoke verification; live OSRM, cloud slots and field route accuracy unverified."
+      },
+      "sha256": "e248193ebb88f0dfe4660d3d8be42d74df0fdc191e34a365d8f5a56cc60c4f55"
+    },
+    "pipeline": {
+      "source": "benchmarks/pipeline_demo.json",
+      "provenance": "synthetic_fixture_pipeline",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "generated_at": "2026-10-14T16:55:05.776899+00:00",
+        "source_scope": "fixture",
+        "provenance": "synthetic_fixture_pipeline_not_field_validation",
+        "nlp_mode": "calibrated_teacher",
+        "stages": {
+          "ingest": {
+            "latency_ms": 136.878,
+            "telemetry": {
+              "inserted": 3,
+              "storage_counts": [
+                3,
+                0
+              ],
+              "outbox_counts": [
+                3,
+                3
+              ],
+              "fixture_reports": 3,
+              "gazetteer": {
+                "upserted_count": 24,
+                "rejected_count": 0
+              }
+            }
+          },
+          "nlp": {
+            "latency_ms": 259.659,
+            "telemetry": {
+              "processed_raw": 3,
+              "active_forwarded": 3,
+              "dropped_noise_or_inactive": 0,
+              "extracted_count": 3,
+              "dead_letter_count": 0,
+              "deferred_count": 0,
+              "handled_count": 6
+            }
+          },
+          "spatial": {
+            "latency_ms": 302.997,
+            "telemetry": {
+              "geocoded_count": 3,
+              "cache_hits": 3,
+              "nominatim_hits": 0,
+              "clusters_created_or_updated": 3,
+              "dead_letter_count": 0,
+              "deferred_count": 0,
+              "handled_count": 3,
+              "published_count": 3,
+              "avg_geocode_ms": 5.81870000072134
+            }
+          },
+          "analytics": {
+            "latency_ms": 206.761,
+            "telemetry": {
+              "clusters_analyzed": 1,
+              "level1_count": 0,
+              "level2_count": 0,
+              "level3_count": 1,
+              "clusters_expired": 0,
+              "dead_letter_count": 0,
+              "processed_count": 3,
+              "published_count": 1,
+              "avg_expected_clearance_min": 626.6240542618266
+            }
+          }
+        },
+        "queue_scope": "shared_development_queues; stage totals may include prior pending reports",
+        "end_to_end_latency_ms": 906.391
+      },
+      "sha256": "dae4b0d23fd272f6c8ecdd321229fb670c3c14b2fc249552302aa27ec8dd398a"
+    },
+    "pipeline_replay": {
+      "source": "benchmarks/pipeline_demo_replay.json",
+      "provenance": "synthetic_fixture_pipeline_replay",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "generated_at": "2026-10-14T16:55:47.815312+00:00",
+        "source_scope": "fixture",
+        "provenance": "synthetic_fixture_pipeline_not_field_validation",
+        "nlp_mode": "calibrated_teacher",
+        "stages": {
+          "ingest": {
+            "latency_ms": 70.09,
+            "telemetry": {
+              "inserted": 0,
+              "storage_counts": [
+                0,
+                0
+              ],
+              "outbox_counts": [
+                0,
+                0
+              ],
+              "fixture_reports": 3,
+              "gazetteer": {
+                "upserted_count": 24,
+                "rejected_count": 0
+              }
+            }
+          },
+          "nlp": {
+            "latency_ms": 99.436,
+            "telemetry": {
+              "processed_raw": 0,
+              "active_forwarded": 0,
+              "dropped_noise_or_inactive": 0,
+              "extracted_count": 0,
+              "dead_letter_count": 0,
+              "deferred_count": 0,
+              "handled_count": 0
+            }
+          },
+          "spatial": {
+            "latency_ms": 23.555,
+            "telemetry": {
+              "geocoded_count": 0,
+              "cache_hits": 0,
+              "nominatim_hits": 0,
+              "clusters_created_or_updated": 0,
+              "dead_letter_count": 0,
+              "deferred_count": 0,
+              "handled_count": 0,
+              "published_count": 0,
+              "avg_geocode_ms": 0.0
+            }
+          },
+          "analytics": {
+            "latency_ms": 106.097,
+            "telemetry": {
+              "clusters_analyzed": 0,
+              "level1_count": 0,
+              "level2_count": 0,
+              "level3_count": 0,
+              "clusters_expired": 0,
+              "dead_letter_count": 0,
+              "processed_count": 0,
+              "published_count": 0,
+              "avg_expected_clearance_min": 0.0
+            }
+          }
+        },
+        "queue_scope": "shared_development_queues; stage totals may include prior pending reports",
+        "end_to_end_latency_ms": 299.247
+      },
+      "sha256": "3c95ddffde9b20de3ae7913d6ce2673f626e32025510485c0c1c7482dfe1e891"
+    },
+    "verification": {
+      "source": "benchmarks/phase7_verification.json",
+      "provenance": "local_repository_verification",
+      "field_validated": false,
+      "status": "recorded",
+      "metrics": {
+        "date": "2026-10-14",
+        "timezone": "Asia/Calcutta",
+        "provenance": "local_repository_verification",
+        "field_validated": false,
+        "pytest": {
+          "passed": 234,
+          "failed": 0,
+          "skipped": 0,
+          "duration_seconds": 20.21,
+          "environment": {
+            "TRAFFICSENSE_INTEGRATION": "1",
+            "LLM_API_KEY": "empty",
+            "INFERENCE_MODE": "calibrated_teacher"
+          }
+        },
+        "ruff": "passed",
+        "powershell_syntax": "passed",
+        "headers_and_module_caps": "passed",
+        "python_syntax": "passed",
+        "frontend": {
+          "npm_install": "passed",
+          "tsc_b": "passed",
+          "vite_build": "passed",
+          "warning": "Map bundle approximately 2.22MB uncompressed; Vite large-chunk warning remains",
+          "test_passed": 3,
+          "test_failed": 0
+        },
+        "browser": {
+          "themes": "passed",
+          "scout_route_and_verdicts": "passed",
+          "golden_record_waterfall": "passed",
+          "assistant_bound_slots_and_rows": "passed",
+          "corridor_history": "passed",
+          "demo_button": "passed",
+          "console_errors": 0,
+          "three_final_palettes": "passed",
+          "native_terrain_and_buildings": "passed",
+          "volumetric_towers_ribbons_arcs": "passed",
+          "custom_camera_timeline": "passed",
+          "eta_driving_hold_split": "passed",
+          "terrain_zoom_alignment": "passed",
+          "screenshots": [
+            "benchmarks/phase7_console_preview.png",
+            "benchmarks/phase7_highway_paper.png",
+            "benchmarks/phase7_asphalt_carbon.png"
+          ],
+          "continuous_terrain_ribbon": "passed"
+        },
+        "limitations": [
+          "Deterministic offline inference required for the verified suite; configured cloud quality unverified.",
+          "Large map bundle; 60FPS unverified.",
+          "MapLibre 5 has no native ambient occlusion; contact-shadow approximation implemented.",
+          "Field validation and live provider direction matching unverified."
+        ],
+        "live_traffic": {
+          "mode": "mocked_only",
+          "cap": 5,
+          "timeout_seconds": 2.5,
+          "redis_ttl_seconds": 60,
+          "fixture_bypass": "passed",
+          "fallback": "passed",
+          "real_provider_validation": "not_performed"
+        }
+      },
+      "sha256": "6d1295866104f8bb0024c65d672cae3c25e2bdf7729e27e028048a3f573b0998"
+    }
+  },
+  "qlora_local_artifacts": {
+    "directory": "models/qwen25_3b_lora",
+    "adapter_config_present": true,
+    "adapter_weights_present": true,
+    "inference_accuracy": "not_measured",
+    "runtime_loading": "not_verified"
+  },
+  "limitations": [
+    "Authored fixtures are developmental evidence, not independent field validation.",
+    "Training loss is not an extraction accuracy measurement.",
+    "Small warm SQL timings do not establish national-scale performance.",
+    "Predictive p90 bounds remain uncalibrated against field clearance times.",
+    "Missing evidence stays missing; no invented measurements."
+  ]
+}

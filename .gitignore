@@ -1,0 +1,61 @@
+# Credentials and private configuration (only the blank template is public).
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+.aws/
+
+# Installed dependencies, builds, caches and logs.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage*
+coverage.xml
+htmlcov/
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+.ipynb_checkpoints/
+
+# Local model weights and training checkpoints; source/notebooks stay public.
+/models/
+/checkpoints/
+/training/checkpoints/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.gguf
+*.onnx
+
+# Local databases, archives and scratch exports.
+*.db
+*.sqlite*
+*.dump
+*.zip
+*.tar
+*.tar.gz
+/tmp/
+/logs/
+/backups/
+
+# Personal documents and machine-specific handoff notes.
+/resume-updated/
+/PROJECT_STATE.md
+/CODE_MAP.md
+/benchmarks/provider_pause_settings.json
+.agents/
+.codex/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

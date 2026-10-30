@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-10-14T18:57:40.139540+00:00",
+  "source_scope": "fixture",
+  "provenance": "synthetic_fixture_pipeline_not_field_validation",
+  "nlp_mode": "calibrated_teacher",
+  "stages": {
+    "ingest": {
+      "latency_ms": 78.032,
+      "telemetry": {
+        "inserted": 0,
+        "storage_counts": [
+          0,
+          0
+        ],
+        "outbox_counts": [
+          0,
+          0
+        ],
+        "fixture_reports": 3,
+        "gazetteer": {
+          "upserted_count": 24,
+          "rejected_count": 0
+        }
+      }
+    },
+    "nlp": {
+      "latency_ms": 705.35,
+      "telemetry": {
+        "processed_raw": 6,
+        "active_forwarded": 6,
+        "dropped_noise_or_inactive": 0,
+        "extracted_count": 6,
+        "dead_letter_count": 0,
+        "deferred_count": 0,
+        "handled_count": 12
+      }
+    },
+    "spatial": {
+      "latency_ms": 1519.878,
+      "telemetry": {
+        "geocoded_count": 0,
+        "cache_hits": 0,
+        "nominatim_hits": 0,
+        "clusters_created_or_updated": 0,
+        "dead_letter_count": 6,
+        "deferred_count": 0,
+        "handled_count": 6,
+        "published_count": 0,
+        "avg_geocode_ms": 0.0
+      }
+    },
+    "analytics": {
+      "latency_ms": 114.339,
+      "telemetry": {
+        "clusters_analyzed": 0,
+        "level1_count": 0,
+        "level2_count": 0,
+        "level3_count": 0,
+        "clusters_expired": 0,
+        "dead_letter_count": 0,
+        "processed_count": 0,
+        "published_count": 0,
+        "avg_expected_clearance_min": 0.0
+      }
+    }
+  },
+  "queue_scope": "shared_development_queues; stage totals may include prior pending reports",
+  "end_to_end_latency_ms": 2417.81
+}

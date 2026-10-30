@@ -1,0 +1,19 @@
+# Keep text portable across Windows, Linux and macOS.
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=lf
+*.sql text eol=lf
+*.psql text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+Makefile text eol=lf
+.githooks/* text eol=lf
+*.png binary
+*.pdf binary

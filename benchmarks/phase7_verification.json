@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Calcutta",
+  "provenance": "local_repository_verification",
+  "field_validated": false,
+  "pytest": {
+    "passed": 234,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 20.21,
+    "environment": {
+      "TRAFFICSENSE_INTEGRATION": "1",
+      "LLM_API_KEY": "empty",
+      "INFERENCE_MODE": "calibrated_teacher"
+    }
+  },
+  "ruff": "passed",
+  "powershell_syntax": "passed",
+  "headers_and_module_caps": "passed",
+  "python_syntax": "passed",
+  "frontend": {
+    "npm_install": "passed",
+    "tsc_b": "passed",
+    "vite_build": "passed",
+    "warning": "Map bundle approximately 2.22MB uncompressed; Vite large-chunk warning remains",
+    "test_passed": 3,
+    "test_failed": 0
+  },
+  "browser": {
+    "themes": "passed",
+    "scout_route_and_verdicts": "passed",
+    "golden_record_waterfall": "passed",
+    "assistant_bound_slots_and_rows": "passed",
+    "corridor_history": "passed",
+    "demo_button": "passed",
+    "console_errors": 0,
+    "three_final_palettes": "passed",
+    "native_terrain_and_buildings": "passed",
+    "volumetric_towers_ribbons_arcs": "passed",
+    "custom_camera_timeline": "passed",
+    "eta_driving_hold_split": "passed",
+    "terrain_zoom_alignment": "passed",
+    "screenshots": [
+      "benchmarks/phase7_console_preview.png",
+      "benchmarks/phase7_highway_paper.png",
+      "benchmarks/phase7_asphalt_carbon.png"
+    ],
+    "continuous_terrain_ribbon": "passed"
+  },
+  "limitations": [
+    "Deterministic offline inference required for the verified suite; configured cloud quality unverified.",
+    "Large map bundle; 60FPS unverified.",
+    "MapLibre 5 has no native ambient occlusion; contact-shadow approximation implemented.",
+    "Field validation and live provider direction matching unverified."
+  ],
+  "live_traffic": {
+    "mode": "mocked_only",
+    "cap": 5,
+    "timeout_seconds": 2.5,
+    "redis_ttl_seconds": 60,
+    "fixture_bypass": "passed",
+    "fallback": "passed",
+    "real_provider_validation": "not_performed"
+  }
+}
